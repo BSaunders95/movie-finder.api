@@ -10,9 +10,6 @@ import org.springframework.stereotype.Component;
 import uk.gov.companieshouse.moviefinder.api.exception.DataNotFoundException;
 import uk.gov.companieshouse.moviefinder.api.exception.GenericDataException;
 
-/**
- * Provides functionality to deserialize a file from a provided file name to an object
- */
 @Component
 public class JsonFileDeserializer {
 
@@ -35,7 +32,7 @@ public class JsonFileDeserializer {
 
         } catch (FileNotFoundException e) {
 
-            logger.error("The file with the following provided name: '" + fileName + "' could not be sourced!");
+            logger.error("The file with the following name: '" + fileName + "' could not be sourced!");
             throw new DataNotFoundException(e);
         } catch (IOException e) {
 

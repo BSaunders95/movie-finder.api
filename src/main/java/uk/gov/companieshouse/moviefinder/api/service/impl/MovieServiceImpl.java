@@ -3,13 +3,13 @@ package uk.gov.companieshouse.moviefinder.api.service.impl;
 import java.util.Collections;
 import java.util.Comparator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import uk.gov.companieshouse.moviefinder.api.dao.MovieDao;
 import uk.gov.companieshouse.moviefinder.api.model.Movie;
 import uk.gov.companieshouse.moviefinder.api.model.Movies;
 import uk.gov.companieshouse.moviefinder.api.service.MovieService;
 
-@Component
+@Service
 public class MovieServiceImpl implements MovieService {
 
     @Autowired

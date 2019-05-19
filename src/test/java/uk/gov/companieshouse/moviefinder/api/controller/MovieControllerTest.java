@@ -33,8 +33,8 @@ public class MovieControllerTest {
     private Movie movie;
 
     @Test
-    @DisplayName("Get all movies")
-    void getAllMovies() {
+    @DisplayName("Get full movies list")
+    void getFullMovieList() {
 
         when(movieService.getFullMovieList()).thenReturn(movies);
 

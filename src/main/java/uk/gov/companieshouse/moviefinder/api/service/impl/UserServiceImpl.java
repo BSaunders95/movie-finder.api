@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService {
      * Collects {@link Comment} data from a provided {@link Movies} object and collates it into a {@link Map}
      * of users and their comments.
      *
-     * @param movies The movie data from which to collate users' comments
+     * @param movies The movies from which to collate users' comments
      * @return a map keyed by users with a list of their comments
      */
     private Map<String, List<Comment>> getCommentsGroupedByUser(Movies movies) {

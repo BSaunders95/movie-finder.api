@@ -38,8 +38,8 @@ public class MovieServiceImplTest {
     }
 
     @Test
-    @DisplayName("Get all movies")
-    void getAllMovies() {
+    @DisplayName("Get full movie list")
+    void getFullMovieList() {
 
         Movies returnedMovies = movieService.getFullMovieList();
 
